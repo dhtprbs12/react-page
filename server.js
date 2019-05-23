@@ -151,5 +151,5 @@ app.post('/validation', function(req, res){
 });
 
 // Listening
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`Server Running on port ${port}`));
