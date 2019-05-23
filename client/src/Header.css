@@ -1,0 +1,113 @@
+.Header {
+	height: 10%;
+	text-align: center;
+}
+
+.nav {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid lightgray;
+}
+
+.welcome{
+	padding: 5px 10px;
+}
+
+.buttons {
+	padding-top: 18px;
+}
+
+.createButton, .adminButton{
+  border: none;
+  text-align: center;
+	font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 6px;
+  cursor: pointer;
+	border-radius: 10px;
+}
+
+.createButton {
+  background-color: #008CBA;
+  color: white;
+}
+
+.createButton:hover {
+	background-color: #007094; /* Blue */
+}
+
+.adminButton {
+  background-color: white;
+  color: #008CBA;
+}
+
+.adminButton:hover {
+	background-color: lightgray;
+	color: white;
+}
+
+
+
+.Header h1, h2, p {
+	margin: 0;
+}
+
+.Header-picture {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.Header-picture > img {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	border: 2px solid lightgray;
+	padding: 3px;
+}
+
+/*responsive web*/
+@media screen and (max-width:900px){
+	.Header-picture{
+		display: block;
+	}
+	.Header-info {
+		margin-left: auto;
+	}
+	.Header-info > div{
+		padding: 0 !important;
+	}
+}
+
+.Header-info > div{
+	padding: 10% 0;
+}
+
+.Header-info-detail {
+	display: flex;
+	justify-content: center;
+}
+
+.Header-info-detail div {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.post-number, .visitors-number{
+	font-weight: bold;
+}
+
+.post, .visitors {
+	margin-left: 10px;
+}
+
+hr {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 0;
+	border-top: 1px solid lightgray;
+}

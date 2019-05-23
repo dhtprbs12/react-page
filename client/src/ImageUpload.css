@@ -1,0 +1,87 @@
+/*responsive web*/
+@media screen and (max-width:900px){
+/*body color*/
+  .previewComponent {
+    display: block !important;
+  }
+  .left, .right {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+  }
+}
+
+.previewComponent {
+  display: flex;
+  justify-content: space-around;
+  text-align: initial;
+  height: 100%;
+  width: 100%;
+}
+
+.left, .right {
+  width: 50%;
+  height: 100%;
+  margin: 10px;
+}
+
+.fileInput, .description-title > input {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  cursor: pointer;
+  height: 28px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.imgPreview {
+  text-align: center;
+  height: 272px;
+  width: 100%;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+.imgPreview img {
+  width: 100%;
+  height: 100%;
+}
+
+.previewText {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.right-textarea {
+  width: 100%;
+  height: 272px;
+}
+
+.right-textarea > textarea {
+  background-color: transparent;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.submitButton {
+  padding: 12px;
+  margin: 10px;
+  background: #fff;
+  border: 4px solid #d3d3d3;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #efefef;
+}
