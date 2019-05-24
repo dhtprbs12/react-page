@@ -39,7 +39,7 @@ class ElementPopup extends React.Component {
 	*/
 	fetchUrl(){
 		var id = this.props.id;
-		let url = 'http://localhost:9000/server/get-comments?element_id='+id;
+		let url = 'http://localhost:3000/server/get-comments?element_id='+id;
 		//fetch url
 		fetch(url)
 		.then((response) => {
@@ -101,7 +101,7 @@ class ElementPopup extends React.Component {
 		}
 
 		// if everything is valid
-    let url = 'http://localhost:9000/server/comment-upload';
+    let url = 'http://localhost:3000/server/comment-upload';
 
 		let object = {
 			element_id: this.props.id,
@@ -141,7 +141,7 @@ class ElementPopup extends React.Component {
 				<button onClick={this.props.closePopup}>X</button>
 				<div className='elementPopup-inner'>
 					<div className='elementPopup-left'>
-						<img src={'http://localhost:9000/server/get-images?name=' + this.props.imgSrc} alt='element-pic' />
+						<img src={'http://localhost:3000/server/get-images?name=' + this.props.imgSrc} alt='element-pic' />
 					</div>
 					<div className='elementPopup-right'>
 						<div className='elementPopup-comment'>

@@ -38,7 +38,7 @@ class Body extends React.Component {
 		This set state so that it refreshes HTML.
 	*/
 	fetchUrl(){
-		let url = 'http://localhost:9000/server/get-elements';
+		let url = 'http://localhost:3000/server/get-elements';
 		// fetch url
 		fetch(url)
 		.then((response) => {
