@@ -33,7 +33,7 @@ class Element extends React.Component {
 	render(){
 		return(
 			<div className='Element' id={this.props.id}>
-				<img src={'http://localhost:3000/server/get-images?name=' + this.props.imgSrc} alt='element-pic' />
+				<img src={'http://localhost:3000/get-images?name=' + this.props.imgSrc} alt='element-pic' />
 				<div className='title'>
 					<h3>{this.props.title} <span className='date'>{this.props.created}</span></h3>
 				</div>

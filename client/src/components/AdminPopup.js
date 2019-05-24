@@ -65,7 +65,7 @@ class AdminPopup extends React.Component{
 		This communicates with server and validates values that user entered.
 	*/
 	validationHandler(){
-		let url = 'http://localhost:3000/server/validation';
+		let url = 'http://localhost:3000/validation';
 
 		let object = {
 			id: this.state.id,
