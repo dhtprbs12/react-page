@@ -23,11 +23,20 @@ app.use(function(req, res, next) {
 /*
   Connect mysql using its module
 */
-var conn = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'Dhtp123rbs.',
-  database : 'react'
+// var conn = mysql.createConnection({
+//   host     : 'localhost',
+//   user     : 'root',
+//   password : 'Dhtp123rbs.',
+//   database : 'react'
+// });
+
+let secretObj = require(__dirname+'/dbConfig.js');
+console.log(secretObj);
+var conn = mysql.createPool({
+  host:secretObj.host,
+  user:secretObj.user,
+  password:secretObj.password,
+  database:secretObj.database
 });
 
 conn.connect();
