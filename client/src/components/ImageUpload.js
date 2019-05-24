@@ -132,7 +132,7 @@ class ImageUpload extends React.Component {
 				'Accept': 'application/json',
 				'Content-Type' : 'application/json'
 			},
-			body : JSON.stringify(info)
+			body : info
 		};
 		// fetch url
 		fetch(url, fetchOptions)
