@@ -29,9 +29,9 @@ app.use(function(req, res, next) {
 //   password : 'Dhtp123rbs.',
 //   database : 'react'
 // });
+// conn.connect();
 
 let secretObj = require(__dirname+'/dbConfig.js');
-console.log(secretObj);
 var conn = mysql.createPool({
   host:secretObj.host,
   user:secretObj.user,
@@ -39,7 +39,7 @@ var conn = mysql.createPool({
   database:secretObj.database
 });
 
-conn.connect();
+
 
 /*
   Set path direction to store an image
