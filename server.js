@@ -126,9 +126,9 @@ app.post('/image-upload', upload.single('photo'), function (req, res) {
 */
 app.post('/info-upload', function (req, res) {
   //res.header("Access-Control-Allow-Origin", "*");
-
+  const info = req.body;
   const time = moment().format('YYYY-MM-DD kk:mm:ss');
-  conn.query('insert into elements (image, title, description, created) values (?,?,?,?)',[req.body.imageUrl, req.body.title, req.body.description, time], function (err, result, fields) {
+  conn.query('insert into elements (image, title, description, created) values (?,?,?,?)',[info.imageUrl, info.title, info.description, time], function (err, result, fields) {
     if (err) {throw err};
   });
   res.status(200).end()
