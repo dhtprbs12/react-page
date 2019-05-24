@@ -36,7 +36,7 @@ class ImageUpload extends React.Component {
       return;
     }
     // if everything is valid
-    let url = 'http://52.9.186.77:3000/image-upload';
+    let url = 'http://52.9.186.77/image-upload';
     const formData = new FormData();
     formData.append('photo',this.state.file);
 
@@ -119,7 +119,7 @@ class ImageUpload extends React.Component {
     This gets called when uploading image succeeds.
   */
   infoUpload(){
-    let url = 'http://52.9.186.77:3000/info-upload';
+    let url = 'http://52.9.186.77/info-upload';
     let info = {
 			title: this.state.title,
 			description: this.state.description,
